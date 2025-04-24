@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insuraices®</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo">
             <!-- Logo -->
             <img src="./images/Logo-Insuraices.png" alt="Logo Insuraices&reg;">
         </div>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="hamburger">
+                <!-- icono de menú hamburguesa -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="close">
+                <!-- icono de cerrar menú -->
+                <span></span>
+                
+            </div>
+            <!-- Menú de navegación -->
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#manufacturing">Fabricación</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <ul class="nav-links-mobile">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#manufacturing">Fabricación</a></li>
                 <li><a href="#products">Productos</a></li>
@@ -21,33 +40,38 @@
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
-        <div>
-            <span>
-                <!-- Icono de whatsapp -->
-                <a href="https://wa.me/56982646308" target="_blank" >WhatsApp</a>
+        <div class="social-media">
+            <span class="social-icon">
+                <!-- whatsapp -->
+                 <button class="whatsapp-button">
+                    <a href="https://wa.me/56982646308" target="_blank" >
+                        <img class="whatsapp" src="./images/rrss/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                 </button>
             </span>
         </div>
     </header>
     <main>
         <!-- HOME -->
         <section id="home" class="home">
-            <div>
+            <div class="home-text">
                 <h1>Insuraices®</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet...</p>
+                <p>Enocosmética natural la belleza del futuro...</p>
                 <!-- slider para imagenes o imagen como portada -->
             </div>
-            <div>
-                <img src="" alt="Imagen principal de Insuraices">
+            <div class="home-image">
+                <img src="./images/banner.jpg" alt="Imagen principal de Insuraices">
             </div>
         </section>
         <!-- FABRICACIÓN -->
         <section  id="manufacturing" class="manufacturing">
-            <article>
-                <div>
-                   <img src="" alt="Imagen de Orujo">
+            <article class="manufacturing-article">
+                <div class="manufacturing-image">
+                    <!-- Imagen de orujo -->
+                   <img src="./images/manufact/manufact-1.jpg" alt="Imagen de Orujo">
                    <!-- Podría ser img de residuos o algún video (revisar con cleinte) -->
                 </div>
-                <div>
+                <div class="manufacturing-text">
                     <h2>Fabricación</h2>
                     <p>
                         En Insuraices transformamos el orujo de uva, un residuo de la industria vitivinícola, 
@@ -61,11 +85,11 @@
                 </div>
             </article>
 
-            <article>
-                <div>
-                    <img src="" alt="Imagen Materia Prima">
+            <article class="manufacturing-article">
+                <div class="manufacturing-image">
+                    <img src="./images/manufact/manufact-2.jpg" alt="Imagen Materia Prima">
                 </div>
-                <div>
+                <div class="manufacturing-text">
                     <h3>Upcycling en acción:</h3>
                     <p>
                         Transformamos el orujo de uva en cosmética natural, libre de tóxicos y rica en antioxidantes.
@@ -73,25 +97,23 @@
                 </div>
             </article>
 
-           <article>
-                <div>
-                   <img src="" alt="Imagen Proceso de Fabricación">
+           <article class="manufacturing-article feria-article">
+                <div class="manufacturing-image">
+                    <img src="./images/manufact/manufact-3.jpg" alt="Feria de Emprendedores">
                 </div>
-                <div>
+                <div class="manufacturing-text">
                     <h3>Feria de Emprendedores</h3>
                     <p>Datos de la feria más recurrente</p>
-                    <div>
-                        <img src="" alt="Imagen de Feria de Emprendedores">
-                    </div>
                 </div>
             </article>
+            
         </section>
         <!-- PRODUCTOS -->
-        <section  id="products">
+        <section  id="products" class="products">
             <h1>Productos</h1>
             <!-- Slider/Carrusel con productos más vendidos -->
-            <h2>Productos más vendidos</h2>
-            <div>
+            <h3>Productos más vendidos</h3>
+            <div class="products-images">
                 <!-- <button class="prev">&lt;</button> -->
                <!-- items -->
                 <div><img src="./images/top-products/Bruma aromaterapia.png" alt="Producto 1"></div>
@@ -101,30 +123,35 @@
             </div>
         </section>
         <!-- Todos los productos c/ descripción -->
-        <section>
-             <div>
-                <h2>Todos Nuestros Productos</h2>
-                 <article>
-                     <img src="./images/products/Aceite de masaje corporal con aromaterapia.png" alt="Producto 1">
-                     <h3>Lorem Ipsum</h3>
-                     <p>Descripción corta del producto...</p>
-                 </article>
-                 <article>
-                     <img src="./images/products/Agua micelar.png" alt="Producto 2">
-                     <h3>Lorem Ipsum</h3>
-                     <p>Descripción corta del producto...</p>
-                 </article>
-                 <article>
-                    <img src="./images/products/Bio Glitter Gel.png" alt="Producto 3">
+        <section id="all-products" class="all-products">
+            <h2>Todos Nuestros Productos</h2>
+       
+            <div class="container product-scroll-container"> <article class="product">
+                    <img class="product-img" src="./images/all-products/Crema de manos.png" alt="Producto 1">
                     <h3>Lorem Ipsum</h3>
                     <p>Descripción corta del producto...</p>
-                 </article>
-             </div>
-             <a href="products.html">VER TODOS</a>
-        </section>
+                </article>
+                <article class="product">
+                    <img class="product-img" src="./images/all-products/Espuma de baño.png" alt="Producto 2">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Descripción corta del producto...</p>
+                </article>
+                <article class="product">
+                   <img class="product-img" src="./images/all-products/Jabón de glicerina.png" alt="Producto 3">
+                   <h3>Lorem Ipsum</h3>
+                   <p>Descripción corta del producto...</p>
+                </article>
+                <!-- <article class="product">
+                    <img class="product-img" src="./images/products/Crema de manos.png" alt="Producto 4">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Descripción corta del producto...</p>
+                 </article> -->
+                </div>
+            <a href="products.html">VER TODOS</a>
+       </section>
         <!-- NOSOTROS -->
         <section id="about-us" class="about-us">
-            <div>
+            <div class="about-us-text">
                 <h2>Nosotros</h2>
                 <h3>Somos Insuraíces</h3>
                 <p>
@@ -149,16 +176,21 @@
                     Posicionar a Insuraices como una marca líder en el mercado de la cosmética natural en Chile.    
                 </p>
             </div>
-            <div>
-                <!-- Puede ser una imagen con varios productos / Puesto, etc (Definir con cleinte) -->
-                <img src="" alt="Imagen de Insuraices">
+            <div class="about-us-media"> 
+                <img src="./images/about-us/about-us-1.jpg" alt="Imagen representativa de Insuraices"> 
+                <div class="video-container">
+                    <video controls playsinline loop muted poster="./images/about-us/cover-video.png">
+                        <source src="./images/about-us/about-us-2.mov" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video. Considera actualizarlo.
+                    </video>
+                </div>
             </div>
         </section>
         <!-- CONTACTO -->
         <section id="contact" class="contact">
             <h2>Contacto</h2>
-            <p>¿Tienes dudas sobre nuestros productos? Contáctanos, estamos aquí para ayudarte.</p>
-            <address>
+            <p class="contact-question">¿Tienes dudas sobre nuestros productos? Contáctanos, estamos aquí para ayudarte.</p>
+            <address class="contact-info">
                 Talca, Region del Maule, chile.<br>
                 +56 9 8264 6308<br>
                 insuraices.contacto@gmail.com<br>
@@ -168,17 +200,37 @@
                 <a href="https://www.tiktok.com/@insu.raices" target="_blank">TikTok</a><br>
             </address>
         </section>
-
     </main>
 
-    <footer>
-        <div>
-            <img src="./images/Logo-Footer.png" alt="Logo Insuraices&reg;">
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="./images/Logo-Insuraices.png" alt="Logo Insuraices&reg;">
+            <div class="footer-logo">
+                <img src="./images/Logo-Footer.png" alt="Logo Insuraices&reg;">
+            </div>
+            <div class="footer-rrss">
+                <a href="https://www.instagram.com/insu.raices/" target="_blank" title="Instagram">
+                    <img src="./images/rrss/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/karlada1?locale=es_LA" target="_blank" title="Facebook">
+                    <img src="./images/rrss/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@insu.raices" target="_blank" title="TikTok">
+                    <img src="./images/rrss/tiktok.svg" alt="TikTok">
+                </a>
+            </div>
         </div>
-        <div>
-            <p>&copy; 2025 Insuraices®. Todos los derechos reservados.</p>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Insuraices® | Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a class='whatsapp-float-button' href='https://wa.me/56982646308' target="_blank" title='Escríbenos'>
+        <img class="whatsapp" src="./images/rrss/whatsapp-floating.svg" alt="WhatsApp">
+        ¿Tienes dudas?
+    </a>
+    <!-- Fin botón flotante -->
 
     <!-- JavaScript -->
     <!-- <script src="/js/script.js"></script> -->
