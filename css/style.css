@@ -395,7 +395,7 @@ header {
     background-color: var(--background-color); 
     padding: 25px; 
     border-radius: 15px; 
-    margin: 0 auto 30px auto; 
+    /* margin: 0 auto 30px auto;  */
     max-width: 400px; 
     box-shadow: 0 4px 12px rgba(139, 81, 69, 0.08); 
     text-align: left; 
@@ -404,9 +404,7 @@ header {
     flex: initial; 
     width: auto; 
     scroll-snap-align: none; 
-}
-.product:last-child { 
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
 }
 .product:hover { 
     transform: translateY(-5px); 
