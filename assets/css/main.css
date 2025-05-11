@@ -7,6 +7,18 @@
 */
 
 /*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+/* Fuentes de Marca */
+@font-face {
+  font-family: 'Amsterdam-Four';
+  src: url('../fonts/Amsterdam-Four/Amsterdam-Four_ttf.woff2') format('woff2'),
+       url('../fonts/Amsterdam-Four/Amsterdam-Four_ttf.woff') format('woff'),
+       url('../fonts/Amsterdam-Four/Amsterdam\ Four_ttf.ttf') format('truetype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+
+/*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
@@ -15,6 +27,7 @@
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
+  --hero-font: "Amsterdam-Four", normal;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -776,15 +789,16 @@ section,
 }
 
 .hero h1 {
+  font-family: 'Amsterdam-Four', normal; 
+  font-size: 3.5rem;
+  margin-bottom: 0.5em; 
   margin: 0 0 20px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  line-height: 1.5; 
+  font-weight: 500;
   color: color-mix(in srgb, var(--heading-color), transparent 10%);
 }
 
 .hero h1 span {
-  border: 1px solid red;
   color: var(--heading-color);
   border-bottom: 4px solid var(--accent-color);
 }
@@ -984,20 +998,6 @@ section,
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
-/* .gallery .gallery-item {
-  overflow: hidden;
-  border-right: 3px solid var(--background-color);
-  border-bottom: 3px solid var(--background-color);
-}
-
-.gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-}
-
-.gallery .gallery-item:hover img {
-  transform: scale(1.1);
-} */
-
 .gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid var(--background-color);
