@@ -117,13 +117,16 @@
       const mainContent = document.querySelector('main.main');
       const footer = document.getElementById('footer');
 
-      if (header) {
-        header.setAttribute('inert', '');
-      }
       if (mainContent) {
+        mainContent.removeAttribute('aria-hidden');
         mainContent.setAttribute('inert', '');
       }
+      if (header) {
+        header.removeAttribute('aria-hidden');
+        header.setAttribute('inert', '');
+      }
       if (footer) {
+        footer.removeAttribute('aria-hidden');
         footer.setAttribute('inert', '');
       }
     });
@@ -134,11 +137,11 @@
       const mainContent = document.querySelector('main.main');
       const footer = document.getElementById('footer');
 
-      if (header) {
-        header.removeAttribute('inert');
-      }
       if (mainContent) {
         mainContent.removeAttribute('inert');
+      }
+      if (header) {
+        header.removeAttribute('inert');
       }
       if (footer) {
         footer.removeAttribute('inert');
@@ -154,21 +157,21 @@
   /**
    * Init swiper sliders
    */
-  function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
+  // function initSwiper() {
+  //   document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+  //     let config = JSON.parse(
+  //       swiperElement.querySelector(".swiper-config").innerHTML.trim()
+  //     );
 
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }
-    });
-  }
+  //     if (swiperElement.classList.contains("swiper-tab")) {
+  //       initSwiperWithCustomPagination(swiperElement, config);
+  //     } else {
+  //       new Swiper(swiperElement, config);
+  //     }
+  //   });
+  // }
 
-  window.addEventListener("load", initSwiper);
+  // window.addEventListener("load", initSwiper);
 
   /**
    * Frequently Asked Questions Toggle
