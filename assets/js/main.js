@@ -109,6 +109,43 @@
     selector: '.glightbox'
   });
 
+  // Verificar si la instancia de GLightbox existe antes de asignarle eventos
+  if (glightbox) {
+    // Cuando el lightbox se abre, añade el atributo inert a los elementos que no deben ser interactivos.
+    glightbox.on('open', () => {
+      const header = document.getElementById('header');
+      const mainContent = document.querySelector('main.main');
+      const footer = document.getElementById('footer');
+
+      if (header) {
+        header.setAttribute('inert', '');
+      }
+      if (mainContent) {
+        mainContent.setAttribute('inert', '');
+      }
+      if (footer) {
+        footer.setAttribute('inert', '');
+      }
+    });
+
+    glightbox.on('close', () => {
+      // Cuando el lightbox se cierra, quita el atributo inert para que vuelvan a ser interactivos.
+      const header = document.getElementById('header');
+      const mainContent = document.querySelector('main.main');
+      const footer = document.getElementById('footer');
+
+      if (header) {
+        header.removeAttribute('inert');
+      }
+      if (mainContent) {
+        mainContent.removeAttribute('inert');
+      }
+      if (footer) {
+        footer.removeAttribute('inert');
+      }
+    });
+  }
+
   /**
    * Initiate Pure Counter
    */
