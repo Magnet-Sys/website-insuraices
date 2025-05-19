@@ -1150,6 +1150,14 @@ section,
   color: var(--contrast-color);
 }
 
+.contact .info-link {
+  font-size: 14px;
+  color: var(--bs-dark);
+}
+.contact .info-link:hover {
+  color: var(--accent-color);
+}
+
 /*--------------------------------------------------------------
 # Contact - WhatsApp Section
 --------------------------------------------------------------*/
