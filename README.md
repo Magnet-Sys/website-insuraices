@@ -75,10 +75,10 @@ Este sitio web está basado en el template:
 * **Facebook:** [https://www.facebook.com/karlada1?locale=es_LA](https://www.facebook.com/karlada1?locale=es_LA)
 * **TikTok:** [https://www.tiktok.com/@insu.raices](https://www.tiktok.com/@insu.raices)
 
-## Redes Sociales
-
 ## Deploy en Netlify
 
 * **Insuraices:** [https://insuraices.netlify.app/](https://insuraices.netlify.app/)
+
+## Derechos de Autor
 
 &copy; Copyright **Insuraíces®** Todos los derechos reservados.
