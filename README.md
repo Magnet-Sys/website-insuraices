@@ -79,6 +79,6 @@ Este sitio web está basado en el template:
 
 ## Deploy en Netlify
 
-* **Insuraices: ** [https://insuraices.netlify.app/](https://insuraices.netlify.app/)
+* **Insuraices:** [https://insuraices.netlify.app/](https://insuraices.netlify.app/)
 
 &copy; Copyright **Insuraíces®** Todos los derechos reservados.
